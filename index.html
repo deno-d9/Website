@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +22,7 @@
       border-radius: 16px;
       box-shadow: 0 0 30px rgba(138, 43, 226, 0.4);
       text-align: center;
+      max-width: 500px;
     }
 
     h1 {
@@ -99,22 +98,18 @@
     <button class="btn" onclick="copyScript1()">🐱Adopt Me Script</button>
     <button class="btn" onclick="copyScript()">🌎Universal Script</button>
     <button class="btn" onclick="copyServerLink()">🔗 Copy Server Link</button>
-    <button class="btn" onclick="follow()">🔔Follow</button>
-    <button class="btn" onclick="subscribe()">🔔 Subscribe</button>
     <div id="copyMessage" class="message">✅ Copied to clipboard!</div>
-    
-    <!-- New Heading for Executor -->
+
+    <!-- New Socials Section -->
+    <h1 class="get-executor">Socials</h1>
+    <button class="btn" onclick="follow()">🔔 Follow</button>
+    <button class="btn" onclick="subscribe()">🔔 Subscribe</button>
+
+    <!-- Executors Section -->
     <h1 class="get-executor">Executors</h1>
-    
-    <!-- Executor for Android Button -->
     <button class="btn executor-btn" onclick="openAndroidExecutor()">Executor for Android</button>
-
-    <!-- Executor for Windows Button -->
     <button class="btn executor-btn" onclick="openWindowsExecutor()">Executor for Windows</button>
-
-    <!-- Executor for iOS Button -->
     <button class="btn executor-btn" onclick="openIosExecutor()">Executor for iOS</button>
-
 
     <div class="footer">Made by DHubOnTop</div>
   </div>
@@ -126,19 +121,22 @@
     const serverLink = "https://discord.gg/rBPHRnAAtq";
     const followLink = "https://www.tiktok.com/@dhubontop?_t=ZN-8x0B1K0SvBe&_r=1";
     const youtubeLink = "https://www.youtube.com/@DHubOnTop";
-    const androidExecutorLink = "https://delta-executor.com/";
-    const windowsExecutorLink = "https://xeno.now";
+    const androidExecutorLink = "https://deltaexploits.gg/android_dl";
+    const windowsExecutorLink = "https://www.xeno.onl/";
     const iosExecutorLink = "https://codex.lol";
+
     function copyScript() {
       navigator.clipboard.writeText(universalscriptCode)
         .then(() => showCopied())
         .catch(() => alert("❌ Failed to copy script."));
     }
+
     function copyScript1() {
       navigator.clipboard.writeText(admscriptCode)
         .then(() => showCopied())
-        .catch(() => alert("❌ Failed to copy  script."));
+        .catch(() => alert("❌ Failed to copy script."));
     }
+
     function copyScript2() {
       navigator.clipboard.writeText(mm2scriptCode)
         .then(() => showCopied())
@@ -154,6 +152,7 @@
     function subscribe() {
       window.open(youtubeLink, '_blank');
     }
+
     function follow() {
       window.open(followLink, '_blank');
     }
@@ -164,12 +163,10 @@
       setTimeout(() => msg.classList.remove("show"), 2000);
     }
 
-    // Function to open the Android executor download page
     function openAndroidExecutor() {
       window.open(androidExecutorLink, '_blank');
     }
 
-    // Function to open the Windows executor download page
     function openWindowsExecutor() {
       window.open(windowsExecutorLink, '_blank');
     }
